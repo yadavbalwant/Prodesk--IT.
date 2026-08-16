@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Prodesk IT — Enterprise IT infrastructure, cloud solutions, cybersecurity, and managed services. Transform your business with intelligent technology." />
+  <meta name="theme-color" content="#1E40AF" />
+  <title>Prodesk IT — Enterprise IT Solutions & Infrastructure</title>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Prodesk IT — Enterprise IT Solutions" />
+  <meta property="og:description" content="Cloud, cybersecurity, and managed IT services that scale with your business." />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+
+</head>
+<body>
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="navbar" id="navbar">
+    <nav class="navbar__inner container">
+      <a href="#home" class="navbar__logo">
+        <span class="navbar__logo-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="2"/><circle cx="8" cy="8" r="1"/><circle cx="16" cy="16" r="1"/><line x1="8" y1="8" x2="16" y2="16"/>
+          </svg>
+        </span>
+        <span>Prodesk<span class="text-primary"> IT</span></span>
+      </a>
+
+      <ul class="navbar__links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#solutions">Solutions</a></li>
+        <li><a href="#stats">Stats</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="navbar__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="theme-toggle__icon--moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+          <svg class="theme-toggle__icon--sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+        </button>
+        <a href="#contact" class="btn btn--primary navbar__cta">Get a Quote</a>
+      </div>
+
+      <div class="navbar__mobile-actions">
+        <button class="theme-toggle theme-toggle--mobile" id="themeToggleMobile" aria-label="Toggle dark mode">
+          <svg class="theme-toggle__icon--moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+          <svg class="theme-toggle__icon--sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+        </button>
+        <button class="navbar__hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg class="navbar__hamburger-icon navbar__hamburger-icon--open" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+          <svg class="navbar__hamburger-icon navbar__hamburger-icon--close" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div class="navbar__mobile-menu" id="mobileMenu">
+      <a href="#services" class="navbar__mobile-link">Services</a>
+      <a href="#solutions" class="navbar__mobile-link">Solutions</a>
+      <a href="#stats" class="navbar__mobile-link">Stats</a>
+      <a href="#testimonials" class="navbar__mobile-link">Testimonials</a>
+      <a href="#contact" class="navbar__mobile-link">Contact</a>
+      <a href="#contact" class="btn btn--primary navbar__mobile-cta">Get a Quote</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="home">
+      <div class="hero__bg-blob hero__bg-blob--primary" aria-hidden="true"></div>
+      <div class="hero__bg-blob hero__bg-blob--accent" aria-hidden="true"></div>
+
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <span class="eyebrow hero__eyebrow animate-fade-in-up">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Enterprise IT Solutions
+          </span>
+
+          <h1 class="hero__headline animate-fade-in-up delay-1">
+            Transform your business with
+            <span class="hero__headline-gradient">intelligent IT infrastructure</span>
+          </h1>
+
+          <p class="hero__subheadline animate-fade-in-up delay-2">
+            Prodesk IT delivers enterprise-grade cloud, cybersecurity, and managed
+            services that scale with your business. Built for reliability, designed for growth.
+          </p>
+
+          <div class="hero__cta animate-fade-in-up delay-3">
+            <a href="#contact" class="btn btn--primary">
+              Schedule a Consultation
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+            <a href="#services" class="btn btn--secondary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              Explore Services
+            </a>
+          </div>
+
+          <div class="hero__badges animate-fade-in-up delay-4">
+            <span class="hero__badge"><span class="hero__badge-check"></span>SOC 2 Certified</span>
+            <span class="hero__badge"><span class="hero__badge-check"></span>ISO 27001</span>
+            <span class="hero__badge"><span class="hero__badge-check"></span>GDPR Ready</span>
+          </div>
+        </div>
+
+        <div class="hero__media animate-scale-in delay-2">
+          <div class="hero__image-wrap">
+            <img
+            src="assets\images\img1.png"
+              alt="Professional IT team collaborating in a modern office"
+              width="1260" height="945"
+              loading="eager" fetchpriority="high" decoding="async"
+            />
+          </div>
+
+          <div class="hero__floating-card hero__floating-card--uptime animate-float">
+            <span class="hero__floating-icon hero__floating-icon--accent">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </span>
+            <div>
+              <p class="hero__floating-value">99.99%</p>
+              <p class="hero__floating-label">Uptime SLA</p>
+            </div>
+          </div>
+
+          <div class="hero__floating-card hero__floating-card--cloud animate-float delay-1">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-secondary)"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+            <span class="hero__floating-text">Cloud Ready</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== LOGO STRIP ===================== -->
+    <section class="logo-strip" aria-label="Trusted by leading companies">
+      <div class="container">
+        <p class="logo-strip__label">Powering 500+ enterprise teams worldwide</p>
+      </div>
+      <div class="logo-strip__marquee-wrap">
+        <div class="logo-strip__marquee animate-marquee">
+          <span class="logo-strip__logo">TechCorp</span>
+          <span class="logo-strip__logo">FinEdge</span>
+          <span class="logo-strip__logo">HealthPlus</span>
+          <span class="logo-strip__logo">RetailMax</span>
+          <span class="logo-strip__logo">CloudNine</span>
+          <span class="logo-strip__logo">DataSync</span>
+          <span class="logo-strip__logo">NetGuard</span>
+          <span class="logo-strip__logo">ScaleUp</span>
+          <span class="logo-strip__logo">DevHub</span>
+          <span class="logo-strip__logo">SecureLink</span>
+          <!-- Duplicate for seamless loop -->
+          <span class="logo-strip__logo">TechCorp</span>
+          <span class="logo-strip__logo">FinEdge</span>
+          <span class="logo-strip__logo">HealthPlus</span>
+          <span class="logo-strip__logo">RetailMax</span>
+          <span class="logo-strip__logo">CloudNine</span>
+          <span class="logo-strip__logo">DataSync</span>
+          <span class="logo-strip__logo">NetGuard</span>
+          <span class="logo-strip__logo">ScaleUp</span>
+          <span class="logo-strip__logo">DevHub</span>
+          <span class="logo-strip__logo">SecureLink</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SERVICES ===================== -->
+    <section class="services section--alt" id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow reveal">What We Do</span>
+          <h2 class="section-title reveal delay-1">Full-spectrum IT services for modern enterprises</h2>
+          <p class="section-subtitle reveal delay-2">
+            From cloud migration to cybersecurity, we deliver the infrastructure,
+            tools, and expertise your business needs to thrive in a digital-first world.
+          </p>
+        </div>
+
+        <div class="services__grid">
+          <article class="card services__card reveal delay-1">
+            <span class="services__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+            </span>
+            <h3 class="services__card-title">Cloud Infrastructure</h3>
+            <p class="services__card-text">Scalable, secure cloud architecture on AWS, Azure, and Google Cloud. Migrate, optimize, and scale with confidence.</p>
+            <ul class="services__features">
+              <li><span class="services__feature-check"></span>Multi-cloud strategy</li>
+              <li><span class="services__feature-check"></span>Auto-scaling</li>
+              <li><span class="services__feature-check"></span>Cost optimization</li>
+            </ul>
+          </article>
+
+          <article class="card services__card reveal delay-2">
+            <span class="services__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </span>
+            <h3 class="services__card-title">Cybersecurity</h3>
+            <p class="services__card-text">Proactive threat detection, zero-trust security models, and 24/7 SOC monitoring to protect your critical assets.</p>
+            <ul class="services__features">
+              <li><span class="services__feature-check"></span>Threat detection</li>
+              <li><span class="services__feature-check"></span>Zero-trust model</li>
+              <li><span class="services__feature-check"></span>SOC monitoring</li>
+            </ul>
+          </article>
+
+          <article class="card services__card reveal delay-3">
+            <span class="services__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+            </span>
+            <h3 class="services__card-title">Managed IT Services</h3>
+            <p class="services__card-text">End-to-end IT operations management — from server maintenance to helpdesk support. Focus on your business, we handle the tech.</p>
+            <ul class="services__features">
+              <li><span class="services__feature-check"></span>24/7 monitoring</li>
+              <li><span class="services__feature-check"></span>Helpdesk support</li>
+              <li><span class="services__feature-check"></span>Proactive maintenance</li>
+            </ul>
+          </article>
+
+          <article class="card services__card reveal delay-1">
+            <span class="services__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </span>
+            <h3 class="services__card-title">Custom Development</h3>
+            <p class="services__card-text">Tailored software solutions built with modern frameworks. From internal tools to customer-facing platforms.</p>
+            <ul class="services__features">
+              <li><span class="services__feature-check"></span>Web & mobile apps</li>
+              <li><span class="services__feature-check"></span>API integrations</li>
+              <li><span class="services__feature-check"></span>Legacy modernization</li>
+            </ul>
+          </article>
+
+          <article class="card services__card reveal delay-2">
+            <span class="services__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+            </span>
+            <h3 class="services__card-title">IT Consulting</h3>
+            <p class="services__card-text">Strategic technology roadmaps, digital transformation guidance, and CIO-level advisory for informed decisions.</p>
+            <ul class="services__features">
+              <li><span class="services__feature-check"></span>Tech roadmaps</li>
+              <li><span class="services__feature-check"></span>Digital transformation</li>
+              <li><span class="services__feature-check"></span>CIO advisory</li>
+            </ul>
+          </article>
+
+          <article class="card services__card reveal delay-3">
+            <span class="services__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            </span>
+            <h3 class="services__card-title">Data & Analytics</h3>
+            <p class="services__card-text">Turn raw data into actionable insights with business intelligence dashboards, data pipelines, and reporting.</p>
+            <ul class="services__features">
+              <li><span class="services__feature-check"></span>BI dashboards</li>
+              <li><span class="services__feature-check"></span>Data pipelines</li>
+              <li><span class="services__feature-check"></span>Real-time reporting</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SOLUTIONS ===================== -->
+    <section class="solutions" id="solutions">
+      <div class="container solutions__grid">
+        <div class="solutions__media reveal">
+          <div class="solutions__image-wrap">
+            <img
+              src="assets\images\img2.png"
+              alt="Modern data center with blue-lit server racks"
+              width="900" height="675"
+              loading="lazy" decoding="async"
+            />
+          </div>
+          <div class="solutions__media-glow" aria-hidden="true"></div>
+        </div>
+
+        <div class="solutions__content">
+          <span class="eyebrow reveal">Why Prodesk IT</span>
+          <h2 class="section-title reveal delay-1">Built for scale. Engineered for trust.</h2>
+          <p class="section-subtitle reveal delay-2">
+            We don't just manage your IT — we architect it for the future. Every solution
+            is designed with compliance, scalability, and operational excellence at its core.
+          </p>
+
+          <div class="solutions__points">
+            <div class="solutions__point reveal delay-2">
+              <span class="solutions__point-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+              </span>
+              <div>
+                <p class="solutions__point-title">Zero-downtime migration</p>
+                <p class="solutions__point-text">Move workloads to the cloud with no business disruption.</p>
+              </div>
+            </div>
+
+            <div class="solutions__point reveal delay-3">
+              <span class="solutions__point-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              </span>
+              <div>
+                <p class="solutions__point-title">Compliance-ready security</p>
+                <p class="solutions__point-text">Meet SOC 2, HIPAA, and GDPR requirements out of the box.</p>
+              </div>
+            </div>
+
+            <div class="solutions__point reveal delay-4">
+              <span class="solutions__point-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+              </span>
+              <div>
+                <p class="solutions__point-title">Scalable data architecture</p>
+                <p class="solutions__point-text">Handle 10x growth without re-engineering your stack.</p>
+              </div>
+            </div>
+
+            <div class="solutions__point reveal delay-5">
+              <span class="solutions__point-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              </span>
+              <div>
+                <p class="solutions__point-title">Automated operations</p>
+                <p class="solutions__point-text">Reduce manual toil with Infrastructure-as-Code pipelines.</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn btn--primary reveal delay-5">
+            Start your transformation
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== STATS ===================== -->
+    <section class="stats" id="stats">
+      <div class="stats__bg" aria-hidden="true"></div>
+      <div class="container">
+        <div class="stats__grid">
+          <div class="stats__item reveal">
+            <p class="stats__value" data-target="500" data-suffix="+">0</p>
+            <p class="stats__label">Enterprise Clients</p>
+          </div>
+          <div class="stats__item reveal delay-1">
+            <p class="stats__value" data-target="99" data-suffix=".99%">0</p>
+            <p class="stats__label">Uptime SLA</p>
+          </div>
+          <div class="stats__item reveal delay-2">
+            <p class="stats__value" data-target="15" data-suffix="+">0</p>
+            <p class="stats__label">Years Experience</p>
+          </div>
+          <div class="stats__item reveal delay-3">
+            <p class="stats__value" data-target="24" data-suffix="/7">0</p>
+            <p class="stats__label">SOC Monitoring</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TESTIMONIALS ===================== -->
+    <section class="testimonials section--alt" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow reveal">Client Stories</span>
+          <h2 class="section-title reveal delay-1">Trusted by industry leaders</h2>
+          <p class="section-subtitle reveal delay-2">
+            Don't take our word for it. Here's what CTOs and executives say about
+            partnering with Prodesk IT.
+          </p>
+        </div>
+
+        <div class="testimonials__grid">
+          <figure class="card testimonials__card reveal delay-1">
+            <div class="testimonials__card-top">
+              <div class="testimonials__stars">
+                <span class="testimonials__star"></span><span class="testimonials__star"></span><span class="testimonials__star"></span><span class="testimonials__star"></span><span class="testimonials__star"></span>
+              </div>
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" class="testimonials__quote-icon"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg>
+            </div>
+            <blockquote class="testimonials__quote">"Prodesk IT migrated our entire infrastructure to the cloud with zero downtime. Their team's expertise and communication throughout the process was exceptional. We've seen a 40% reduction in operational costs."</blockquote>
+            <figcaption class="testimonials__author">
+              <span class="testimonials__avatar" style="background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark))">SM</span>
+              <div>
+                <p class="testimonials__name">Sarah Mitchell</p>
+                <p class="testimonials__role">CTO, FinTech Global</p>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="card testimonials__card reveal delay-2">
+            <div class="testimonials__card-top">
+              <div class="testimonials__stars">
+                <span class="testimonials__star"></span><span class="testimonials__star"></span><span class="testimonials__star"></span><span class="testimonials__star"></span><span class="testimonials__star"></span>
+              </div>
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" class="testimonials__quote-icon"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg>
+            </div>
+            <blockquote class="testimonials__quote">"The 24/7 SOC monitoring gives us peace of mind. When a critical vulnerability was discovered at 2 AM, their team had already patched it before we even knew. That's the level of proactive service we needed."</blockquote>
+            <figcaption class="testimonials__author">
+              <span class="testimonials__avatar" style="background: linear-gradient(135deg, var(--color-secondary), var(--color-secondary-dark))">JC</span>
+              <div>
+                <p class="testimonials__name">James Chen</p>
+                <p class="testimonials__role">VP of Engineering, RetailMax</p>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="card testimonials__card reveal delay-3">
+            <div class="testimonials__card-top">
+              <div class="testimonials__stars">
+                <span class="testimonials__star"></span><span class="testimonials__star"></span><span class="testimonials__star"></span><span class="testimonials__star"></span><span class="testimonials__star"></span>
+              </div>
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" class="testimonials__quote-icon"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg>
+            </div>
+            <blockquote class="testimonials__quote">"We've worked with three IT firms before Prodesk. None come close. Their strategic roadmap helped us modernize legacy systems while cutting our tech debt in half. They're a true partner, not a vendor."</blockquote>
+            <figcaption class="testimonials__author">
+              <span class="testimonials__avatar" style="background: linear-gradient(135deg, var(--color-accent), var(--color-accent-dark))">PS</span>
+              <div>
+                <p class="testimonials__name">Priya Sharma</p>
+                <p class="testimonials__role">COO, HealthPlus Systems</p>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CTA ===================== -->
+    <section class="cta" id="contact">
+      <div class="container">
+        <div class="cta__card reveal">
+          <div class="cta__bg-blob cta__bg-blob--top" aria-hidden="true"></div>
+          <div class="cta__bg-blob cta__bg-blob--bottom" aria-hidden="true"></div>
+
+          <div class="cta__grid">
+            <div class="cta__content">
+              <span class="cta__eyebrow">Get Started Today</span>
+              <h2 class="cta__title">Ready to modernize your IT infrastructure?</h2>
+              <p class="cta__text">
+                Schedule a free 30-minute consultation. We'll assess your current setup and
+                map out a clear path to a more secure, scalable, and efficient IT operation.
+              </p>
+              <div class="cta__buttons">
+                <a href="mailto:hello@prodesk.it" class="btn btn--white">
+                  Schedule Consultation
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </a>
+                <a href="tel:+18005550100" class="btn btn--glass">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  +91 620 555-xxxx
+                </a>
+              </div>
+            </div>
+
+            <div class="cta__contact-list">
+              <a href="mailto:prodesk@gmail.com" class="cta__contact-item">
+                <span class="cta__contact-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </span>
+                <div>
+                  <p class="cta__contact-label">Email Us</p>
+                  <p class="cta__contact-value">prodesk@gmail.com</p>
+                </div>
+              </a>
+              <a href="tel:+18005550100" class="cta__contact-item">
+                <span class="cta__contact-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </span>
+                <div>
+                  <p class="cta__contact-label">Call Us</p>
+                  <p class="cta__contact-value">+91 xxx xxx-xxxx</p>
+                </div>
+              </a>
+              <a href="#" class="cta__contact-item">
+                <span class="cta__contact-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </span>
+                <div>
+                  <p class="cta__contact-label">Visit Us</p>
+                  <p class="cta__contact-value">4th Floor, 91springboard, Plot. D Block, Sector 2, Noida, Uttar Pradesh 201301</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#home" class="footer__logo">
+            <span class="footer__logo-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="2"/><circle cx="8" cy="8" r="1"/><circle cx="16" cy="16" r="1"/><line x1="8" y1="8" x2="16" y2="16"/>
+              </svg>
+            </span>
+            <span>Prodesk<span class="text-primary"> IT</span></span>
+          </a>
+          <p class="footer__description">Enterprise IT infrastructure, cloud solutions, and cybersecurity for businesses that demand reliability at scale.</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+            <a href="#" class="footer__social-link" aria-label="Twitter"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+            <a href="#" class="footer__social-link" aria-label="GitHub"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+            <a href="#" class="footer__social-link" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg></a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__col-title">Services</h3>
+          <ul class="footer__links">
+            <li><a href="#">Cloud Infrastructure</a></li>
+            <li><a href="#">Cybersecurity</a></li>
+            <li><a href="#">Managed IT</a></li>
+            <li><a href="#">Custom Development</a></li>
+            <li><a href="#">IT Consulting</a></li>
+            <li><a href="#">Data & Analytics</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__col-title">Company</h3>
+          <ul class="footer__links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">Newsroom</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__col-title">Resources</h3>
+          <ul class="footer__links">
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Knowledge Base</a></li>
+            <li><a href="#">API Reference</a></li>
+            <li><a href="#">Status Page</a></li>
+            <li><a href="#">Security</a></li>
+            <li><a href="#">Whitepapers</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2026 Prodesk IT. All rights reserved.</p>
+        <div class="footer__legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+          <a href="#">Security</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
